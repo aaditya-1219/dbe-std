@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <link rel="stylesheet" href="/public/index.css">
+    <!--     
+        roll--no -> game
+        roll--no -> fees_struct
+        game -> fees
+     -->
+</head>
+
+<body>
+    <div id="background"></div>
+    <div class="container">
+        <h1>Student Details</h1>
+        <form action="/formPost" method="post">
+            <h3>Roll_No:</h3>
+            <input type="number" name="rollNo" id="roll--no">
+            <h3>Game:</h3>
+            <input type="text" name="game" id="game">
+            <!-- <h3>Fees_struct:</h3>
+            <input type="text" name="fee--struct" id="fee--struct"> -->
+            <h3>Fees:</h3>
+            <input type="number" name="fees" id="fees">
+            <button type="submit" onclick="submit()">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
